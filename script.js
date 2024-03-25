@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     <div id="galaxy">
         <div class="solar-system">
             <a href="#magician" class="galaxy-logo">
-                <dotlottie-player src="http://localhost:3000/star.lottie" background="transparent" speed="1" style="width: 300px; height: 300px" direction="1" mode="normal" loop autoplay></lottie-player>
+                <dotlottie-player src="https://lucky-star-assets.pages.dev/star.lottie" background="transparent" speed="1" style="width: 300px; height: 300px" direction="1" mode="normal" loop autoplay></lottie-player>
             </a>
 
             <div class="orbit-div">
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
             </div>
         </div>
         <div id="galaxy-effects">
-            <dotlottie-player data-is-ix2-target="1" class="shooting-star-1" animation-type="lottie" direction="1" src="http://localhost:3000/night_sky.lottie" loop intermission="4" autoplay="1" renderer="svg"></dotlottie-player>
+            <dotlottie-player data-is-ix2-target="1" class="shooting-star-1" animation-type="lottie" direction="1" src="https://lucky-star-assets.pages.dev/star.lottie" loop intermission="4" autoplay="1" renderer="svg"></dotlottie-player>
         </div>
     </div>    
     `;

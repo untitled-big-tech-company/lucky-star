@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     <div id="galaxy">
         <div class="solar-system">
             <a href="#magician" class="galaxy-logo">
-                <dotlottie-player src="https://lucky-star-assets.pages.dev/star.lottie" background="transparent" speed="1" style="width: 300px; height: 300px" direction="1" mode="normal" loop autoplay></lottie-player>
+                <dotlottie-player id="lottie-star" src="https://lucky-star-assets.pages.dev/star.lottie" background="transparent" speed="1" direction="1" mode="normal" loop autoplay></lottie-player>
             </a>
 
             <div class="orbit-div">

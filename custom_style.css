@@ -63,7 +63,7 @@
         }
 
         div.orbit-background {
-            background-image: url(https://lucky-star-assets.pages.dev/orbit-03.svg);
+            background-image: url(https://lucky-star-assets.pages.dev/orbit-3.svg);
             background-position: 50%;
             background-repeat: no-repeat;
             background-size: contain;
@@ -78,8 +78,8 @@
             display: grid;
             grid-template-rows: repeat(5, 1fr);
             grid-template-columns: repeat(5, 1fr);
-            width: calc(100vw - 40px);
-            height: calc(100vw - 40px);
+            width: 80vw;
+            height: 80vw;
             justify-items: center;
             align-items: center;
         }
@@ -87,30 +87,31 @@
         .orbit-stone-1 {
             grid-column: 3;
             grid-row: 1;
-            transform: translate(-6px, -53px);
+            transform: translate(-6px, -25px);
         }
 
         .orbit-stone-2 {
             grid-column: 1;
             grid-row: 3;
-            transform: translate(2px, -64px);
+            transform: translate(-13px, -64px);
         }
 
         .orbit-stone-3 {
             grid-column: 5;
             grid-row: 3;
-            transform: translate(21px, -64px);
+            transform: translate(23px, -26px);
         }
 
         .orbit-stone-4 {
             grid-column: 2;
             grid-row: 5;
-            transform: translate(-50px, -31px);
+            transform: translate(-42px, -4px);
         }
 
         .orbit-stone-5 {
             grid-column: 4;
             grid-row: 5;
+            transform: translate(10px, 15px);
         }
 
         .img-stone {
@@ -177,23 +178,23 @@
             }
 
             .orbit-stone-1 {
-
                 transform: translate(12px, -18px);
             }
 
             .orbit-stone-2 {
-
                 transform: translate(-21px, -53px);
             }
 
             .orbit-stone-3 {
-
                 transform: translate(21px, -64px);
             }
 
             .orbit-stone-4 {
-
                 transform: translate(-50px, -31px);
+            }
+
+            .orbit-stone-5 {
+                transform: translate(0, 0);
             }
             div.orbit-grid {
                 width: 700px;

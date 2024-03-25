@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
             </div>
         </div>
         <div id="galaxy-effects">
-            <dotlottie-player data-is-ix2-target="1" class="shooting-star-1" animation-type="lottie" direction="1" src="https://lucky-star-assets.pages.dev/star.lottie" loop intermission="4" autoplay="1" renderer="svg"></dotlottie-player>
+            <dotlottie-player data-is-ix2-target="1" class="shooting-star-1" animation-type="lottie" direction="1" src="https://lucky-star-assets.pages.dev/night_sky.lottie" loop intermission="4" autoplay="1" renderer="svg"></dotlottie-player>
         </div>
     </div>    
     `;

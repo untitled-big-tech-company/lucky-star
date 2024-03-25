@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<head>
+    <script src="script.js">    </script>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+    <style>
+        div#app::before {
+            background-image: url(https://img.thesitebase.net/files/10510656/2024/03/24/0x2048@1711294602d732eb0ef0.png);
+            background-position: 50%;
+            background-size: 1090px;
+            position: absolute;
+            top: 0%;
+            bottom: 0%;
+            left: 0%;
+            right: 0%;
+            overflow: hidden;
+            z-index: 0;
+            background-color: #14162C;
+            content: "";
+        }
+
+        div#wb-main>section {
+            background: none !important;
+            z-index: 1;
+        }
+
+        #galaxy {
+            overflow: hidden;
+        }
+
+        .solar-system {
+            z-index: 0;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 0;
+            display: flex;
+            position: absolute;
+            top: 0%;
+            bottom: 0%;
+            left: 0%;
+            right: 0%
+        }
+
+        .orbit-div {
+            z-index: 0;
+            width: 100%;
+            max-width: 1200px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            position: absolute;
+            top: 0%;
+            bottom: 0%;
+            left: 0%;
+            right: 0%
+        }
+
+
+        .galaxy-logo {
+            transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+            opacity: 1;
+            transform-style: preserve-3d;
+            animation: spin 5s linear infinite;
+        }
+
+        div.orbit-background {
+            background-image: url(https://uploads-ssl.webflow.com/6408bea3de5aef58b7e197d4/6408d3e07780a743800ce785_orbit-03.svg);
+            background-position: 50%;
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+            width: 610px;
+            height: 610px;
+        }
+
+        div.orbit-grid {
+            transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+            animation: spin 20s linear infinite;
+            display: grid;
+            grid-template-rows: repeat(5, 1fr);
+            grid-template-columns: repeat(5, 1fr);
+            width: 700px;
+            height: 700px;
+            justify-items: center;
+            align-items: center;
+        }
+
+        .orbit-stone-1 {
+            grid-column: 3;
+            grid-row: 1;
+            transform: translate(12px, -18px);
+        }
+
+        .orbit-stone-2 {
+            grid-column: 1;
+            grid-row: 3;
+            transform: translate(-21px, -53px);
+        }
+
+        .orbit-stone-3 {
+            grid-column: 5;
+            grid-row: 3;
+            transform: translate(21px, -64px);
+        }
+
+        .orbit-stone-4 {
+            grid-column: 2;
+            grid-row: 5;
+            transform: translate(-50px, -31px);
+        }
+
+        .orbit-stone-5 {
+            grid-column: 4;
+            grid-row: 5;
+        }
+
+        .img-stone {
+            max-width: 60px;
+            max-height: 70px;
+            box-shadow: none;
+            -webkit-backdrop-filter: blur(6px);
+            backdrop-filter: blur(6px);
+            transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+            opacity: 1;
+            transform-style: preserve-3d;
+
+        }
+
+        .img-stone-1 {
+            animation: spin-reverse 16s linear infinite;
+        }
+
+        .img-stone-2 {
+            animation: spin-reverse 30s linear infinite;
+        }
+
+        .img-stone-3 {
+            animation: spin-reverse 25s linear infinite;
+        }
+
+        .img-stone-4 {
+            animation: spin-reverse 45s linear infinite;
+        }
+
+        .img-stone-5 {
+            animation: spin-reverse 20s linear infinite;
+        }
+
+        .shooting-star-1 {
+            z-index: 0;
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            top: 178px;
+            right: 345px;
+        }
+
+        @keyframes spin {
+            100% {
+                transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(360deg) skew(0deg, 0deg);
+            }
+        }
+
+        @keyframes spin-reverse {
+            100% {
+                transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-360deg) skew(0deg, 0deg);
+            }
+        }
+    </style>
+</head>
+
+<body style="background: black;">
+    <div id="galaxy">
+        <div class="solar-system">
+            <a href="#magician" class="galaxy-logo">
+                <dotlottie-player src="./star.lottie" background="transparent" speed="1" style="width: 300px; height: 300px" direction="1" mode="normal" loop autoplay></lottie-player>
+            </a>
+
+            <div class="orbit-div">
+                <div class="orbit-background">
+                </div>
+                <div class="orbit-grid">
+                    <div class="orbit-stone-1">
+                        <img class="img-stone img-stone-1" src="./web_assets/1.png">
+                    </div>
+                    <div class="orbit-stone-2">
+                        <img class="img-stone img-stone-2" src="./web_assets/2.png">
+                    </div>
+                    <div class="orbit-stone-3">
+                        <img class="img-stone img-stone-3" src="./web_assets/3.png">
+                    </div>
+                    <div class="orbit-stone-4">
+                        <img class="img-stone img-stone-4" src="web_assets/4.png">
+                    </div>
+                    <div class="orbit-stone-5">
+                        <img class="img-stone img-stone-5" src="web_assets/5.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="galaxy-effects">
+            <dotlottie-player data-is-ix2-target="1" class="shooting-star-1" animation-type="lottie" direction="1" src="./night_sky.lottie" loop intermission="4" autoplay="1" renderer="svg"></dotlottie-player>
+        </div>
+    </div>
+</body>

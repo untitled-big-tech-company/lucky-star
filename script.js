@@ -59,10 +59,10 @@ const callback = (mutationList, observer) => {
 // Create an observer instance linked to the callback function
 const observer = new MutationObserver(callback);
 if (targetNode) {
-
     // Start observing the target node for configured mutations
     observer.observe(targetNode, config);
 }
-
-document.getElementById('test').innerHTML = galaxyDiv;
+if (document.getElementById('test')) {
+    document.getElementById('test').innerHTML = galaxyDiv;
+}
 });

@@ -1,222 +1,221 @@
-        div#app::before {
-            background-image: url(https://img.thesitebase.net/files/10510656/2024/03/24/0x2048@1711294602d732eb0ef0.png);
-            background-position: 50%;
-            background-size: 1090px;
-            position: absolute;
-            top: 0%;
-            bottom: 0%;
-            left: 0%;
-            right: 0%;
-            overflow: hidden;
-            z-index: 0;
-            background-color: #14162C;
-            content: "";
-        }
+:root {
+    --circle-radius: 40vw;
+    --item-size: 80px;
+}
 
-        div#wb-main>section {
-            background: none !important;
-            z-index: 1;
-        }
+div#app::before {
+    background-image: url(https://img.thesitebase.net/files/10510656/2024/03/24/0x2048@1711294602d732eb0ef0.png);
+    background-position: 50%;
+    background-size: 1090px;
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    overflow: hidden;
+    z-index: 0;
+    background-color: #14162C;
+    content: "";
+}
 
-        #galaxy {
-            overflow: hidden;
-            min-height: 70vh;
-        }
+div#wb-main>section {
+    background: none !important;
+    z-index: 1;
+}
 
-        .solar-system {
-            z-index: 0;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding-bottom: 0;
-            display: flex;
-            position: absolute;
-            top: 0%;
-            bottom: 0%;
-            left: 0%;
-            right: 0%
-        }
+#galaxy {
+    width: calc(var(--circle-radius)* 2);
+    height: calc(var(--circle-radius)* 2);
+    margin: 0 auto;
+    padding-top: calc(var(--item-size) * 2);
+}
 
-        .orbit-div {
-            z-index: 0;
-            width: 100%;
-            max-width: 1200px;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin-left: auto;
-            margin-right: auto;
-            display: flex;
-            position: absolute;
-            top: 0%;
-            bottom: 0%;
-            left: 0%;
-            right: 0%
-        }
+.solar-system {
+    z-index: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
 
-
-        .galaxy-logo {
-            transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-            opacity: 1;
-            transform-style: preserve-3d;
-            animation: spin 5s linear infinite;
-        }
-
-        div.orbit-background {
-            background-image: url(https://lucky-star-assets.pages.dev/orbit-3.svg);
-            background-position: 50%;
-            background-repeat: no-repeat;
-            background-size: contain;
-            position: absolute;
-            width: 80vw;
-            height: 80vw;
-        }
-
-        div.orbit-grid {
-            transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-            animation: spin 20s linear infinite;
-            display: grid;
-            grid-template-rows: repeat(5, 1fr);
-            grid-template-columns: repeat(5, 1fr);
-            width: 80vw;
-            height: 80vw;
-            justify-items: center;
-            align-items: center;
-        }
-
-        .orbit-stone-1 {
-            grid-column: 3;
-            grid-row: 1;
-            transform: translate(-6px, -25px);
-        }
-
-        .orbit-stone-2 {
-            grid-column: 1;
-            grid-row: 3;
-            transform: translate(-13px, -64px);
-        }
-
-        .orbit-stone-3 {
-            grid-column: 5;
-            grid-row: 3;
-            transform: translate(23px, -26px);
-        }
-
-        .orbit-stone-4 {
-            grid-column: 2;
-            grid-row: 5;
-            transform: translate(-42px, -4px);
-        }
-
-        .orbit-stone-5 {
-            grid-column: 4;
-            grid-row: 5;
-            transform: translate(10px, 15px);
-        }
-
-        .img-stone {
-            max-width: 30px;
-            max-height: 50px;
-            box-shadow: none;
-            -webkit-backdrop-filter: blur(6px);
-            backdrop-filter: blur(6px);
-            transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-            opacity: 1;
-            transform-style: preserve-3d;
-
-        }
-
-        .img-stone-1 {
-            animation: spin-reverse 16s linear infinite;
-        }
-
-        .img-stone-2 {
-            animation: spin-reverse 30s linear infinite;
-        }
-
-        .img-stone-3 {
-            animation: spin-reverse 25s linear infinite;
-        }
-
-        .img-stone-4 {
-            animation: spin-reverse 45s linear infinite;
-        }
-
-        .img-stone-5 {
-            animation: spin-reverse 20s linear infinite;
-        }
-
-        .shooting-star-1 {
-            z-index: 0;
-            width: 400px;
-            height: 400px;
-            position: absolute;
-            top: 0;
-            right: 0;
-        }
-
-        #lottie-star {
-            width: 150px;
-            height: 150px;
-        }
+.orbit-div {
+    z-index: 0;
+    width: 100%;
+    max-width: 1200px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
 
 
-        @media (min-width:1025px) { 
-            #lottie-star {
-                width: 300px;
-                height: 300px;
-            }
+.galaxy-logo {
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    opacity: 1;
+    transform-style: preserve-3d;
+    position: absolute;
 
-            .img-stone {
-                max-width: 60px;
-                max-height: 70px;
-            }
+}
 
-            .shooting-star-1 {
-                top: 178px;
-                right: 345px;
-            }
+.galaxy-logo>img {
+    width: 200px;
+    filter: drop-shadow(0 0 1.75rem rgba(255, 255, 255, 0.7));
+}
 
-            .orbit-stone-1 {
-                transform: translate(12px, -18px);
-            }
+div.orbit-background {
+    background-image: url(https://lucky-star-assets.pages.dev/orbit-3.svg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: calc(100% - (var(--item-size) * 2));
+    height: calc(100% - (var(--item-size) * 2));
 
-            .orbit-stone-2 {
-                transform: translate(-21px, -53px);
-            }
+}
 
-            .orbit-stone-3 {
-                transform: translate(21px, -64px);
-            }
+div.orbit-grid {
+    position: relative;
+    justify-items: center;
+    align-items: center;
+    animation: spin 20s linear infinite;
+}
 
-            .orbit-stone-4 {
-                transform: translate(-50px, -31px);
-            }
+.orbit-stone {
+    width: var(--item-size);
+    height: var(--item-size);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 999999px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: calc(var(--item-size) / -2);
+}
 
-            .orbit-stone-5 {
-                transform: translate(0, 0);
-            }
-            div.orbit-grid {
-                width: 700px;
-                height: 700px;
+.orbit-stone-1 {
+    transform: rotate(0deg) translate(var(--circle-radius)) rotate(-0deg);
+    --o-box-shadow-color: rgba(230, 107, 114, 1);
 
-            }
+}
 
-            div.orbit-background {
+.orbit-stone-2 {
+    transform: rotate(60deg) translate(var(--circle-radius)) rotate(-60deg);
+    --o-box-shadow-color: rgb(235, 126, 75);
+}
 
-                width: 610px;
-                height: 610px;
-            }
-        }
+.orbit-stone-3 {
+    transform: rotate(120deg) translate(var(--circle-radius)) rotate(-120deg);
+    --o-box-shadow-color: rgb(83, 155, 239);
+}
 
-        @keyframes spin {
-            100% {
-                transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(360deg) skew(0deg, 0deg);
-            }
-        }
+.orbit-stone-4 {
+    transform: rotate(180deg) translate(var(--circle-radius)) rotate(-180deg);
+    --o-box-shadow-color: rgb(145, 93, 226);
+}
 
-        @keyframes spin-reverse {
-            100% {
-                transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-360deg) skew(0deg, 0deg);
-            }
-        }
+.orbit-stone-5 {
+    transform: rotate(240deg) translate(var(--circle-radius)) rotate(-240deg);
+    --o-box-shadow-color: rgb(99, 208, 162);
+}
+
+.orbit-stone-6 {
+    transform: rotate(300deg) translate(var(--circle-radius)) rotate(-300deg);
+    --o-box-shadow-color: rgb(236, 207, 78);
+}
+
+.img-stone {
+    width: 100%;
+    box-shadow: none;
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    opacity: 1;
+    transform-style: preserve-3d;
+    z-index: 2;
+    filter: drop-shadow(0 0 1.75rem var(--o-box-shadow-color));
+}
+
+
+.img-stone-1 {
+    animation: spin-reverse 16s linear infinite;
+
+}
+
+.img-stone-2 {
+    animation: spin-reverse 30s linear infinite;
+}
+
+.img-stone-3 {
+    animation: spin-reverse 25s linear infinite;
+}
+
+.img-stone-4 {
+    animation: spin-reverse 45s linear infinite;
+}
+
+.img-stone-5 {
+    animation: spin-reverse 20s linear infinite;
+}
+
+.shooting-star-1 {
+    z-index: 0;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#lottie-star {
+    width: 150px;
+    height: 150px;
+}
+
+
+@media (min-width:1025px) {
+    #lottie-star {
+        width: 300px;
+        height: 300px;
+    }
+
+
+    .shooting-star-1 {
+        top: 178px;
+        right: 345px;
+    }
+
+
+}
+
+@keyframes spin {
+    100% {
+        transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(360deg) skew(0deg, 0deg);
+    }
+}
+
+@keyframes spin-reverse {
+    100% {
+        transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-360deg) skew(0deg, 0deg);
+    }
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.5;
+    }
+
+}

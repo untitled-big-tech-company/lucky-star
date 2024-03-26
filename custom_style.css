@@ -24,7 +24,30 @@ div#wb-main>section {
 }
 
 #galaxy {
-    aspect-ratio: 0.5;
+    aspect-ratio: 0.8;
+    position: relative;
+    overflow: hidden;
+    margin-left: -16px;
+    margin-right: -16px;
+    width: 100vw;
+    max-width: 1200px;
+}
+
+#galaxy.the-show-must-go-on .solar-system {
+    transform: scale(0.2) translate(150%, 200%);
+}
+
+#galaxy-effects {
+    pointer-events: none;
+}
+
+#galaxy.the-show-must-go-on #galaxy-effects {
+    display: none;
+}
+
+#galaxy.the-show-must-go-on .nebula-show {
+    opacity: 1;
+    scale: 1;
 }
 
 .solar-system {
@@ -34,6 +57,52 @@ div#wb-main>section {
     align-items: center;
     padding-bottom: 0;
     display: flex;
+    width: 100%;
+    height: 100%;
+    transform: scale(1) translate(0, 0);
+    transition: transform 2000ms ease-in-out;
+    transform-style: preserve-3d;
+}
+
+.nebula-show {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    aspect-ratio: 1;
+    scale: 0;
+    opacity: 0;
+    transition: opacity 1100ms ease-in-out, scale 1100ms ease-in-out;
+    --nebula-border-width: 3px;
+    border-radius: var(--nebula-border-width);
+
+    &::after {
+        position: absolute;
+        content: "";
+        top: calc(-1 * var(--nebula-border-width));
+        left: calc(-1 * var(--nebula-border-width));
+        z-index: -1;
+        width: calc(100% + var(--nebula-border-width) * 2);
+        height: calc(100% + var(--nebula-border-width) * 2);
+        background: linear-gradient(60deg,
+                hsl(224, 85%, 66%),
+                hsl(269, 85%, 66%),
+                hsl(314, 85%, 66%),
+                hsl(359, 85%, 66%),
+                hsl(44, 85%, 66%),
+                hsl(89, 85%, 66%),
+                hsl(134, 85%, 66%),
+                hsl(179, 85%, 66%));
+        background-size: 300% 300%;
+        background-position: 0 50%;
+        border-radius: calc(2 * var(--nebula-border-width));
+        animation: moveGradient 4s alternate infinite;
+    }
+}
+
+.nebula-show--container {
+    background: white;
+    border-radius: var(--nebula-border-width);
     width: 100%;
     height: 100%;
 }
@@ -170,7 +239,6 @@ div.orbit-grid {
     filter: drop-shadow(0 0 1.75rem rgba(255, 255, 255, 0.7));
 }
 
-
 @media (min-width:1025px) {
     :root {
         --circle-radius: 400px;
@@ -215,4 +283,10 @@ div.orbit-grid {
         opacity: 0.5;
     }
 
+}
+
+@keyframes moveGradient {
+    50% {
+        background-position: 100% 50%;
+    }
 }

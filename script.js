@@ -1,6 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
     const galaxyDiv = `
     <div id="galaxy">
+        <div class="nebula-show">
+            <div class="nebula-show--container">
+                
+            </div>
+        </div>
         <div class="solar-system">
             <a href="#magician" class="galaxy-logo">
                 <img id="lottie-star" src="https://lucky-star-assets.pages.dev/web_assets/object.png" alt="Galaxy Logo">
@@ -37,25 +42,36 @@ document.addEventListener("DOMContentLoaded", () => {
     </div>    
     `;
     // Select the node that will be observed for mutations
-const targetNode = document.getElementById("tBaMU1");
+    const targetNode = document.getElementById("tBaMU1");
 
-// Options for the observer (which mutations to observe)
-const config = { attributes: true, childList: true, subtree: true };
+    // Options for the observer (which mutations to observe)
+    const config = { attributes: true, childList: true, subtree: true };
 
-// Callback function to execute when mutations are observed
-const callback = (mutationList, observer) => {
-  for (const mutation of mutationList) {
-     if (mutation.type === "attributes" && mutation.attributeName === 'class' && mutation.target.getAttribute('selector-id') === 'tBaMU1') {
-        mutation.target.innerHTML = galaxyDiv;
+    // Callback function to execute when mutations are observed
+    const callback = (mutationList, observer) => {
+        for (const mutation of mutationList) {
+            if (mutation.type === "attributes" && mutation.attributeName === 'class' && mutation.target.getAttribute('selector-id') === 'tBaMU1') {
+                mutation.target.innerHTML = galaxyDiv;
+                mutation.target.style = 'width: 100%';
+                const galaxy = document.getElementById('galaxy');
+                const solarSystem = document.querySelector('.solar-system');
+                galaxy.addEventListener('click', (e) => {
+                    if (solarSystem.contains(e.target)) {
+                        galaxy.classList.add('the-show-must-go-on');
+                    }
+                    else {
+                        galaxy.classList.remove('the-show-must-go-on');
+                    }
+                });
+            }
+        }
+    };
+
+    // Create an observer instance linked to the callback function
+    const observer = new MutationObserver(callback);
+    if (targetNode) {
+        // Start observing the target node for configured mutations
+        observer.observe(targetNode, config);
     }
-  }
-};
-
-// Create an observer instance linked to the callback function
-const observer = new MutationObserver(callback);
-if (targetNode) {
-    // Start observing the target node for configured mutations
-    observer.observe(targetNode, config);
-}
 
 });

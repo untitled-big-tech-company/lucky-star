@@ -1,6 +1,6 @@
 :root {
     --circle-radius: 40vw;
-    --item-size: 80px;
+    --item-size: 40px;
 }
 
 div#app::before {
@@ -64,10 +64,6 @@ div#wb-main>section {
 
 }
 
-.galaxy-logo>img {
-    width: 200px;
-    filter: drop-shadow(0 0 1.75rem rgba(255, 255, 255, 0.7));
-}
 
 div.orbit-background {
     background-image: url(https://lucky-star-assets.pages.dev/orbit-3.svg);
@@ -173,15 +169,19 @@ div.orbit-grid {
 }
 
 #lottie-star {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    filter: drop-shadow(0 0 1.75rem rgba(255, 255, 255, 0.7));
 }
 
 
 @media (min-width:1025px) {
+    :root {
+        --circle-radius: 400px;
+        --item-size: 60px;
+    }
+
     #lottie-star {
-        width: 300px;
-        height: 300px;
+        width: 200px;
     }
 
 

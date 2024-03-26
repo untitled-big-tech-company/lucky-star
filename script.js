@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     <div id="galaxy">
         <div class="solar-system">
             <a href="#magician" class="galaxy-logo">
-                <img src="https://lucky-star-assets.pages.dev/web_assets/object.png" alt="Galaxy Logo">
+                <img id="lottie-star" src="https://lucky-star-assets.pages.dev/web_assets/object.png" alt="Galaxy Logo">
             </a>
 
             <div class="orbit-div">

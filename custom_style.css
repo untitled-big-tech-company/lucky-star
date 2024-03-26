@@ -24,10 +24,7 @@ div#wb-main>section {
 }
 
 #galaxy {
-    width: calc(var(--circle-radius)* 2);
-    height: calc(var(--circle-radius)* 2);
-    margin: 0 auto;
-    padding-top: calc(var(--item-size) * 2);
+    aspect-ratio: 0.5;
 }
 
 .solar-system {

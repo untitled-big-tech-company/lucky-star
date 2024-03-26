@@ -45,13 +45,8 @@ const config = { attributes: true, childList: true, subtree: true };
 // Callback function to execute when mutations are observed
 const callback = (mutationList, observer) => {
   for (const mutation of mutationList) {
-    if (mutation.type === "childList") {
-      console.log("A child node has been added or removed.");
-    } else if (mutation.type === "attributes") {
-      console.log(`The ${mutation.attributeName} attribute was modified.`);
-      if (mutation.attributeName === 'data-loaded') {
-        document.getElementById('tBaMU1').innerHTML = galaxyDiv;
-      }
+     if (mutation.type === "attributes" && mutation.attributeName === 'class' && mutation.target.getAttribute('selector-id') === 'tBaMU1') {
+        mutation.target.innerHTML = galaxyDiv;
     }
   }
 };
@@ -62,7 +57,5 @@ if (targetNode) {
     // Start observing the target node for configured mutations
     observer.observe(targetNode, config);
 }
-if (document.getElementById('test')) {
-    document.getElementById('test').innerHTML = galaxyDiv;
-}
+
 });

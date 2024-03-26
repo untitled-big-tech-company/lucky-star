@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     <div id="galaxy">
         <div class="solar-system">
             <a href="#magician" class="galaxy-logo">
-                <img src="web_assets/object.png" alt="Galaxy Logo">
+                <img src="https://lucky-star-assets.pages.dev/web_assets/object.png" alt="Galaxy Logo">
             </a>
 
             <div class="orbit-div">
@@ -11,22 +11,22 @@ document.addEventListener("DOMContentLoaded", () => {
                 </div>
                 <div class="orbit-grid">
                     <div class="orbit-stone-1 orbit-stone">
-                        <img class="img-stone img-stone-1" src="https://img.thesitebase.net/files/10510656/2024/03/25/17113650384dcb48df40.png">
+                        <img class="img-stone img-stone-1" src="https://lucky-star-assets.pages.dev/web_assets/1.png">
                     </div>
                     <div class="orbit-stone-2 orbit-stone">
-                        <img class="img-stone img-stone-2" src="https://img.thesitebase.net/files/10510656/2024/03/25/171136507147ba837a7b.png">
+                        <img class="img-stone img-stone-2" src="https://lucky-star-assets.pages.dev/web_assets/2.png">
                     </div>
                     <div class="orbit-stone-3 orbit-stone">
-                        <img class="img-stone img-stone-3" src="https://img.thesitebase.net/files/10510656/2024/03/25/17113650774c872fbe02.png">
+                        <img class="img-stone img-stone-3" src="https://lucky-star-assets.pages.dev/web_assets/3.png">
                     </div>
                     <div class="orbit-stone-4 orbit-stone">
-                        <img class="img-stone img-stone-4" src="https://img.thesitebase.net/files/10510656/2024/03/25/1711365081125f9713fb.png">
+                        <img class="img-stone img-stone-4" src="https://lucky-star-assets.pages.dev/web_assets/4.png">
                     </div>
                     <div class="orbit-stone-5 orbit-stone">
-                        <img class="img-stone img-stone-5" src="https://img.thesitebase.net/files/10510656/2024/03/25/17113650852a8d886a85.png">
+                        <img class="img-stone img-stone-5" src="https://lucky-star-assets.pages.dev/web_assets/5.png">
                     </div>
                     <div class="orbit-stone-6 orbit-stone">
-                        <img class="img-stone img-stone-6" src="https://img.thesitebase.net/files/10510656/2024/03/25/17113650852a8d886a85.png">
+                        <img class="img-stone img-stone-6" src="https://lucky-star-assets.pages.dev/web_assets/6.png">
                     </div>
                 </div>
             </div>

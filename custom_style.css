@@ -34,7 +34,8 @@ div#wb-main>section {
 }
 
 #galaxy.the-show-must-go-on .solar-system {
-    transform: scale(0.2) translate(150%, 200%);
+    transform: scale(0) translate(150%, 200%);
+    opacity: 0;
 }
 
 #galaxy-effects {
@@ -50,6 +51,11 @@ div#wb-main>section {
     scale: 1;
 }
 
+#galaxy.the-show-must-go-on .stone-grids {
+    transform: translateY(0);
+    opacity: 1;
+}
+
 .solar-system {
     z-index: 0;
     flex-direction: column;
@@ -59,9 +65,32 @@ div#wb-main>section {
     display: flex;
     width: 100%;
     height: 100%;
+    opacity: 1;
     transform: scale(1) translate(0, 0);
-    transition: transform 2000ms ease-in-out;
+    transition: transform 800ms ease-in-out, opacity 800ms ease-in;
     transform-style: preserve-3d;
+}
+
+.stone-grids {
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    transform: translateY(100%);
+    transition-delay: 200ms;
+    transition: transform 1000ms ease-in-out, opacity 1000ms ease-in;
+}
+
+.stone-grids--stone {
+    width: 100%;
+}
+
+.stone-grids--stone.active {
+    animation: stoneActive 1.25s ease-in-out infinite;
 }
 
 .nebula-show {
@@ -105,6 +134,22 @@ div#wb-main>section {
     border-radius: var(--nebula-border-width);
     width: 100%;
     height: 100%;
+    overflow: hidden;
+}
+
+.nebula-show--stone {
+    position: absolute;
+    height: 100%;
+    opacity: 0;
+}
+
+.nebula-show--stone.active {
+    transition: opacity 0.5s, transform 0.5s;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    transform: scale(1);
 }
 
 .orbit-div {
@@ -258,6 +303,21 @@ div.orbit-grid {
 
 }
 
+
+.button-quantity input {
+    background: none;
+}
+
+.tabs__heading {
+    display: none;
+}
+
+.tabs__headings-wrapper {
+    --p3-font-size: 28px;
+    --p3-line-height: 2;
+    gap: 0 ! important;
+}
+
 @keyframes spin {
     100% {
         transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(360deg) skew(0deg, 0deg);
@@ -283,6 +343,20 @@ div.orbit-grid {
         opacity: 0.5;
     }
 
+}
+
+@keyframes stoneActive {
+    0% {
+        transform: translate(0, -20px);
+    }
+
+    50% {
+        transform: translate(0, -10px);
+    }
+
+    100% {
+        transform: translate(0, -20px);
+    }
 }
 
 @keyframes moveGradient {

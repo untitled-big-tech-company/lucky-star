@@ -1,10 +1,23 @@
 document.addEventListener("DOMContentLoaded", () => {
     const galaxyDiv = `
-    <div id="galaxy">
+    <div id="galaxy" class="">
         <div class="nebula-show">
             <div class="nebula-show--container">
-                
+                <img class="nebula-show--stone" data-stone-id="1" src="web_assets/reality_stone.gif">
+                <img class="nebula-show--stone" data-stone-id="2" src="web_assets/soul_stone.gif">
+                <img class="nebula-show--stone" data-stone-id="3" src="web_assets/space_stone.gif">
+                <img class="nebula-show--stone" data-stone-id="4" src="web_assets/power_stone.gif">
+                <img class="nebula-show--stone" data-stone-id="5" src="web_assets/time_stone.gif">
+                <img class="nebula-show--stone" data-stone-id="6" src="web_assets/mind_stone.gif">
             </div>
+        </div>
+        <div class="stone-grids">
+            <img class="stone-grids--stone" data-stone-id="1" src="https://lucky-star-assets.pages.dev/web_assets/1.png">
+            <img class="stone-grids--stone" data-stone-id="2" src="https://lucky-star-assets.pages.dev/web_assets/2.png">
+            <img class="stone-grids--stone" data-stone-id="3" src="https://lucky-star-assets.pages.dev/web_assets/3.png">
+            <img class="stone-grids--stone" data-stone-id="4" src="https://lucky-star-assets.pages.dev/web_assets/4.png">
+            <img class="stone-grids--stone" data-stone-id="5" src="https://lucky-star-assets.pages.dev/web_assets/5.png?v=2">
+            <img class="stone-grids--stone" data-stone-id="6" src="https://lucky-star-assets.pages.dev/web_assets/6.png">
         </div>
         <div class="solar-system">
             <a href="#magician" class="galaxy-logo">
@@ -15,22 +28,22 @@ document.addEventListener("DOMContentLoaded", () => {
                 <div class="orbit-background">
                 </div>
                 <div class="orbit-grid">
-                    <div class="orbit-stone-1 orbit-stone">
+                    <div class="orbit-stone-1 orbit-stone" data-stone-id="1">
                         <img class="img-stone img-stone-1" src="https://lucky-star-assets.pages.dev/web_assets/1.png">
                     </div>
-                    <div class="orbit-stone-2 orbit-stone">
+                    <div class="orbit-stone-2 orbit-stone" data-stone-id="2">
                         <img class="img-stone img-stone-2" src="https://lucky-star-assets.pages.dev/web_assets/2.png">
                     </div>
-                    <div class="orbit-stone-3 orbit-stone">
+                    <div class="orbit-stone-3 orbit-stone" data-stone-id="3">
                         <img class="img-stone img-stone-3" src="https://lucky-star-assets.pages.dev/web_assets/3.png">
                     </div>
-                    <div class="orbit-stone-4 orbit-stone">
+                    <div class="orbit-stone-4 orbit-stone" data-stone-id="4">
                         <img class="img-stone img-stone-4" src="https://lucky-star-assets.pages.dev/web_assets/4.png">
                     </div>
-                    <div class="orbit-stone-5 orbit-stone">
-                        <img class="img-stone img-stone-5" src="https://lucky-star-assets.pages.dev/web_assets/5.png">
+                    <div class="orbit-stone-5 orbit-stone" data-stone-id="5">
+                        <img class="img-stone img-stone-5" src="https://lucky-star-assets.pages.dev/web_assets/5.png?v=2">
                     </div>
-                    <div class="orbit-stone-6 orbit-stone">
+                    <div class="orbit-stone-6 orbit-stone" data-stone-id="6">
                         <img class="img-stone img-stone-6" src="https://lucky-star-assets.pages.dev/web_assets/6.png">
                     </div>
                 </div>
@@ -46,7 +59,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Options for the observer (which mutations to observe)
     const config = { attributes: true, childList: true, subtree: true };
-
+    const triggerStoneChange = function (stoneId) {
+        document.querySelector(`.stone-grids--stone.active`)?.classList?.remove("active");
+        const stone = document.querySelector(`.stone-grids--stone[data-stone-id='${stoneId}']`);
+        stone.classList.add("active");
+        document.querySelector(`.nebula-show--stone.active`)?.classList?.remove("active");
+        document.querySelector(`.nebula-show--stone[data-stone-id='${stoneId}']`).classList.add("active");
+    }
     // Callback function to execute when mutations are observed
     const callback = (mutationList, observer) => {
         for (const mutation of mutationList) {
@@ -55,12 +74,17 @@ document.addEventListener("DOMContentLoaded", () => {
                 mutation.target.style = 'width: 100%';
                 const galaxy = document.getElementById('galaxy');
                 const solarSystem = document.querySelector('.solar-system');
-                galaxy.addEventListener('click', (e) => {
-                    if (solarSystem.contains(e.target)) {
-                        galaxy.classList.add('the-show-must-go-on');
-                    }
-                    else {
-                        galaxy.classList.remove('the-show-must-go-on');
+                const orbitGrid = document.querySelector('.orbit-grid');
+                solarSystem.addEventListener('click', (e) => {
+                    let stoneId = 1;
+                    stoneId = e.target.closest('.orbit-stone').getAttribute('data-stone-id');
+                    galaxy.classList.add('the-show-must-go-on');
+                    triggerStoneChange(stoneId);
+                });
+                document.querySelector(".stone-grids").addEventListener("click", e => {
+                    if (e.target.classList.contains("stone-grids--stone")) {
+                        const stoneId = e.target.getAttribute("data-stone-id");
+                        triggerStoneChange(stoneId);
                     }
                 });
             }
@@ -74,4 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
         observer.observe(targetNode, config);
     }
 
+    setTimeout(() => {
+        document.getElementById("tBaMU1").classList.add("trigger");
+    }, 200);
 });

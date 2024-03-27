@@ -3,12 +3,12 @@ document.addEventListener("DOMContentLoaded", () => {
     <div id="galaxy" class="">
         <div class="nebula-show">
             <div class="nebula-show--container">
-                <img class="nebula-show--stone" data-stone-id="1" src="web_assets/reality_stone.gif">
-                <img class="nebula-show--stone" data-stone-id="2" src="web_assets/soul_stone.gif">
-                <img class="nebula-show--stone" data-stone-id="3" src="web_assets/space_stone.gif">
-                <img class="nebula-show--stone" data-stone-id="4" src="web_assets/power_stone.gif">
-                <img class="nebula-show--stone" data-stone-id="5" src="web_assets/time_stone.gif">
-                <img class="nebula-show--stone" data-stone-id="6" src="web_assets/mind_stone.gif">
+                <img class="nebula-show--stone" data-stone-id="1" src="https://lucky-star-assets.pages.dev/web_assets/reality_stone.gif">
+                <img class="nebula-show--stone" data-stone-id="2" src="https://lucky-star-assets.pages.dev/web_assets/soul_stone.gif">
+                <img class="nebula-show--stone" data-stone-id="3" src="https://lucky-star-assets.pages.dev/web_assets/space_stone.gif">
+                <img class="nebula-show--stone" data-stone-id="4" src="https://lucky-star-assets.pages.dev/web_assets/power_stone.gif">
+                <img class="nebula-show--stone" data-stone-id="5" src="https://lucky-star-assets.pages.dev/web_assets/time_stone.gif">
+                <img class="nebula-show--stone" data-stone-id="6" src="https://lucky-star-assets.pages.dev/web_assets/mind_stone.gif">
             </div>
         </div>
         <div class="stone-grids">

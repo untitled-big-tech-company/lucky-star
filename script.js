@@ -3,12 +3,41 @@ document.addEventListener("DOMContentLoaded", () => {
     <div id="galaxy" class="">
         <div class="nebula-show">
             <div class="nebula-show--container">
-                <img class="nebula-show--stone" data-stone-id="1" src="https://lucky-star-assets.pages.dev/web_assets/reality_stone.gif">
-                <img class="nebula-show--stone" data-stone-id="2" src="https://lucky-star-assets.pages.dev/web_assets/soul_stone.gif">
-                <img class="nebula-show--stone" data-stone-id="3" src="https://lucky-star-assets.pages.dev/web_assets/space_stone.gif">
-                <img class="nebula-show--stone" data-stone-id="4" src="https://lucky-star-assets.pages.dev/web_assets/power_stone.gif">
-                <img class="nebula-show--stone" data-stone-id="5" src="https://lucky-star-assets.pages.dev/web_assets/time_stone.gif">
-                <img class="nebula-show--stone" data-stone-id="6" src="https://lucky-star-assets.pages.dev/web_assets/mind_stone.gif">
+                <div class="nebula-show--stone data-stone-id="1">
+                   <video controls loop>
+                        <source src="web_assets/videos/1.mp4" type="video/mp4" />
+                   </video> 
+                </div>
+                <div class="nebula-show--stone" data-stone-id="1">
+                   <video loop muted preload="auto">
+                        <source src="web_assets/videos/1.mp4" type="video/mp4" />
+                   </video> 
+                </div>
+                <div class="nebula-show--stone" data-stone-id="2">
+                   <video loop muted preload="auto">
+                        <source src="web_assets/videos/2.mp4" type="video/mp4" />
+                   </video> 
+                </div>
+                <div class="nebula-show--stone" data-stone-id="3">
+                   <video loop muted preload="auto">
+                        <source src="web_assets/videos/3.mp4" type="video/mp4" />
+                   </video> 
+                </div> 
+                <div class="nebula-show--stone" data-stone-id="4">
+                   <video loop muted preload="auto">
+                        <source src="web_assets/videos/4.mp4" type="video/mp4" />
+                   </video> 
+                </div>
+                <div class="nebula-show--stone" data-stone-id="5">
+                   <video loop muted preload="auto">
+                        <source src="web_assets/videos/5.mp4" type="video/mp4" />
+                   </video> 
+                </div>
+                <div class="nebula-show--stone" data-stone-id="6">
+                   <video loop muted preload="auto">
+                        <source src="web_assets/videos/6.mp4" type="video/mp4" />
+                   </video> 
+                </div>s
             </div>
         </div>
         <div class="stone-grids">
@@ -64,7 +93,9 @@ document.addEventListener("DOMContentLoaded", () => {
         const stone = document.querySelector(`.stone-grids--stone[data-stone-id='${stoneId}']`);
         stone.classList.add("active");
         document.querySelector(`.nebula-show--stone.active`)?.classList?.remove("active");
+        document.querySelector(`.nebula-show--stone.active > video`)?.pause();
         document.querySelector(`.nebula-show--stone[data-stone-id='${stoneId}']`).classList.add("active");
+        document.querySelector(`.nebula-show--stone.active > video`)?.play();
     }
     // Callback function to execute when mutations are observed
     const callback = (mutationList, observer) => {

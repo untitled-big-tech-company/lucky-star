@@ -1,6 +1,7 @@
 :root {
     --circle-radius: 40vw;
     --item-size: 40px;
+    --nebula-border-width: 10px;
 }
 
 div#app::before {
@@ -102,10 +103,9 @@ div#wb-main>section {
     scale: 0;
     opacity: 0;
     transition: opacity 1100ms ease-in-out, scale 1100ms ease-in-out;
-    --nebula-border-width: 3px;
     border-radius: var(--nebula-border-width);
-
-    &::after {
+    overflow: hidden;
+    /* &::after {
         position: absolute;
         content: "";
         top: calc(-1 * var(--nebula-border-width));
@@ -126,7 +126,7 @@ div#wb-main>section {
         background-position: 0 50%;
         border-radius: calc(2 * var(--nebula-border-width));
         animation: moveGradient 4s alternate infinite;
-    }
+    } */
 }
 
 .nebula-show--container {

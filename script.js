@@ -5,37 +5,37 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="nebula-show--container">
                 <div class="nebula-show--stone data-stone-id="1">
                    <video controls loop>
-                        <source src="web_assets/videos/1.mp4" type="video/mp4" />
+                        <source src="https://lucky-star-assets.pages.dev/web_assets/videos/1.mp4" type="video/mp4" />
                    </video> 
                 </div>
                 <div class="nebula-show--stone" data-stone-id="1">
                    <video loop muted preload="auto">
-                        <source src="web_assets/videos/1.mp4" type="video/mp4" />
+                        <source src="https://lucky-star-assets.pages.dev/web_assets/videos/1.mp4" type="video/mp4" />
                    </video> 
                 </div>
                 <div class="nebula-show--stone" data-stone-id="2">
                    <video loop muted preload="auto">
-                        <source src="web_assets/videos/2.mp4" type="video/mp4" />
+                        <source src="https://lucky-star-assets.pages.dev/web_assets/videos/2.mp4" type="video/mp4" />
                    </video> 
                 </div>
                 <div class="nebula-show--stone" data-stone-id="3">
                    <video loop muted preload="auto">
-                        <source src="web_assets/videos/3.mp4" type="video/mp4" />
+                        <source src="https://lucky-star-assets.pages.dev/web_assets/videos/3.mp4" type="video/mp4" />
                    </video> 
                 </div> 
                 <div class="nebula-show--stone" data-stone-id="4">
                    <video loop muted preload="auto">
-                        <source src="web_assets/videos/4.mp4" type="video/mp4" />
+                        <source src="https://lucky-star-assets.pages.dev/web_assets/videos/4.mp4" type="video/mp4" />
                    </video> 
                 </div>
                 <div class="nebula-show--stone" data-stone-id="5">
                    <video loop muted preload="auto">
-                        <source src="web_assets/videos/5.mp4" type="video/mp4" />
+                        <source src="https://lucky-star-assets.pages.dev/web_assets/videos/5.mp4" type="video/mp4" />
                    </video> 
                 </div>
                 <div class="nebula-show--stone" data-stone-id="6">
                    <video loop muted preload="auto">
-                        <source src="web_assets/videos/6.mp4" type="video/mp4" />
+                        <source src="https://lucky-star-assets.pages.dev/web_assets/videos/6.mp4" type="video/mp4" />
                    </video> 
                 </div>s
             </div>

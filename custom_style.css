@@ -324,6 +324,11 @@ div.orbit-grid {
     gap: 0 ! important;
 }
 
+button.block-qty-discount__add {
+    background: var(--btn-primary-background);
+    color: var(--btn-primary-text-color);
+}
+
 @keyframes spin {
     100% {
         transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(360deg) skew(0deg, 0deg);

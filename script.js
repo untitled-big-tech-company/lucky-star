@@ -9,13 +9,13 @@ document.addEventListener("DOMContentLoaded", () => {
                    </video> 
                 </div>
                 <div class="nebula-show--stone" data-stone-id="2">
-                   <video loop muted preload="auto" poster="https://lucky-star-assets.pages.dev/web_assets/s2oul_poster.png">
-                        <sour2ce src="https://lucky-star-assets.pages.dev/web_assets/videos/soul.mp4" type="video/mp4" />
+                   <video loop muted preload="auto" poster="https://lucky-star-assets.pages.dev/web_assets/soul_poster.png">
+                        <source src="https://lucky-star-assets.pages.dev/web_assets/videos/soul.mp4" type="video/mp4" />
                    </video> 
                 </div>
                 <div class="nebula-show--stone" data-stone-id="3">
                    <video loop muted preload="auto" poster="https://lucky-star-assets.pages.dev/web_assets/space_poster.png">
-                        <sour2ce src="https://lucky-star-assets.pages.dev/web_assets/videos/space.mp4" type="video/mp4" />
+                        <source src="https://lucky-star-assets.pages.dev/web_assets/videos/space.mp4" type="video/mp4" />
                    </video> 
                 </div> 
                 <div class="nebula-show--stone" data-stone-id="4">

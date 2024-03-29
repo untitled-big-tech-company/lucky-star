@@ -4,32 +4,32 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="nebula-show">
             <div class="nebula-show--container">
                 <div class="nebula-show--stone" data-stone-id="1">
-                   <video loop muted preload="auto" poster="https://lucky-star-assets.pages.dev/web_assets/reality.png">
+                   <video loop muted preload="auto" poster="https://lucky-star-assets.pages.dev/web_assets/reality_poster.png">
                         <source src="https://lucky-star-assets.pages.dev/web_assets/videos/reality.mp4" type="video/mp4" />
                    </video> 
                 </div>
                 <div class="nebula-show--stone" data-stone-id="2">
-                   <video loop muted preload="auto" poster="https://lucky-star-assets.pages.dev/web_assets/soul.png">
-                        <source src="https://lucky-star-assets.pages.dev/web_assets/videos/soul.mp4" type="video/mp4" />
+                   <video loop muted preload="auto" poster="https://lucky-star-assets.pages.dev/web_assets/soul_poster.png">
+                        <sour2ce src="https://lucky-star-assets.pages.dev/web_assets/videos/soul.mp4" type="video/mp4" />
                    </video> 
                 </div>
                 <div class="nebula-show--stone" data-stone-id="3">
-                   <video loop muted preload="auto" poster="https://lucky-star-assets.pages.dev/web_assets/space.png">
-                        <source src="https://lucky-star-assets.pages.dev/web_assets/videos/space.mp4" type="video/mp4" />
+                   <video loop muted preload="auto" poster="https://lucky-star-assets.pages.dev/web_assets/space_poster.png">
+                        <sour2ce src="https://lucky-star-assets.pages.dev/web_assets/videos/space.mp4" type="video/mp4" />
                    </video> 
                 </div> 
                 <div class="nebula-show--stone" data-stone-id="4">
-                   <video loop muted preload="auto" poster="https://lucky-star-assets.pages.dev/web_assets/power.png">
+                   <video loop muted preload="auto" poster="https://lucky-star-assets.pages.dev/web_assets/power_poster.png">
                         <source src="https://lucky-star-assets.pages.dev/web_assets/videos/power.mp4" type="video/mp4" />
                    </video> 
                 </div>
                 <div class="nebula-show--stone" data-stone-id="5">
-                   <video loop muted preload="auto" poster="https://lucky-star-assets.pages.dev/web_assets/time.png">
+                   <video loop muted preload="auto" poster="https://lucky-star-assets.pages.dev/web_assets/time_poster.png">
                         <source src="https://lucky-star-assets.pages.dev/web_assets/videos/time.mp4" type="video/mp4" />
                    </video> 
                 </div>
                 <div class="nebula-show--stone" data-stone-id="6">
-                   <video loop muted preload="auto" poster="https://lucky-star-assets.pages.dev/web_assets/mind.png">
+                   <video loop muted preload="auto" poster="https://lucky-star-assets.pages.dev/web_assets/mind_poster.png">
                         <source src="https://lucky-star-assets.pages.dev/web_assets/videos/mind.mp4" type="video/mp4" />
                    </video> 
                 </div>

@@ -3,39 +3,34 @@ document.addEventListener("DOMContentLoaded", () => {
     <div id="galaxy" class="">
         <div class="nebula-show">
             <div class="nebula-show--container">
-                <div class="nebula-show--stone data-stone-id="1">
-                   <video controls loop>
-                        <source src="https://lucky-star-assets.pages.dev/web_assets/videos/1.mp4" type="video/mp4" />
-                   </video> 
-                </div>
                 <div class="nebula-show--stone" data-stone-id="1">
                    <video loop muted preload="auto">
-                        <source src="https://lucky-star-assets.pages.dev/web_assets/videos/1.mp4" type="video/mp4" />
+                        <source src="https://lucky-star-assets.pages.dev/web_assets/videos/reality.mp4" type="video/mp4" />
                    </video> 
                 </div>
                 <div class="nebula-show--stone" data-stone-id="2">
                    <video loop muted preload="auto">
-                        <source src="https://lucky-star-assets.pages.dev/web_assets/videos/2.mp4" type="video/mp4" />
+                        <source src="https://lucky-star-assets.pages.dev/web_assets/videos/soul.mp4" type="video/mp4" />
                    </video> 
                 </div>
                 <div class="nebula-show--stone" data-stone-id="3">
                    <video loop muted preload="auto">
-                        <source src="https://lucky-star-assets.pages.dev/web_assets/videos/3.mp4" type="video/mp4" />
+                        <source src="https://lucky-star-assets.pages.dev/web_assets/videos/space.mp4" type="video/mp4" />
                    </video> 
                 </div> 
                 <div class="nebula-show--stone" data-stone-id="4">
                    <video loop muted preload="auto">
-                        <source src="https://lucky-star-assets.pages.dev/web_assets/videos/4.mp4" type="video/mp4" />
+                        <source src="https://lucky-star-assets.pages.dev/web_assets/videos/power.mp4" type="video/mp4" />
                    </video> 
                 </div>
                 <div class="nebula-show--stone" data-stone-id="5">
                    <video loop muted preload="auto">
-                        <source src="https://lucky-star-assets.pages.dev/web_assets/videos/5.mp4" type="video/mp4" />
+                        <source src="https://lucky-star-assets.pages.dev/web_assets/videos/time.mp4" type="video/mp4" />
                    </video> 
                 </div>
                 <div class="nebula-show--stone" data-stone-id="6">
                    <video loop muted preload="auto">
-                        <source src="https://lucky-star-assets.pages.dev/web_assets/videos/6.mp4" type="video/mp4" />
+                        <source src="https://lucky-star-assets.pages.dev/web_assets/videos/mind.mp4" type="video/mp4" />
                    </video> 
                 </div>s
             </div>
@@ -43,9 +38,9 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="stone-grids">
             <img class="stone-grids--stone" data-stone-id="1" src="https://lucky-star-assets.pages.dev/web_assets/1.png">
             <img class="stone-grids--stone" data-stone-id="2" src="https://lucky-star-assets.pages.dev/web_assets/2.png">
-            <img class="stone-grids--stone" data-stone-id="3" src="https://lucky-star-assets.pages.dev/web_assets/3.png">
             <img class="stone-grids--stone" data-stone-id="4" src="https://lucky-star-assets.pages.dev/web_assets/4.png">
             <img class="stone-grids--stone" data-stone-id="5" src="https://lucky-star-assets.pages.dev/web_assets/5.png?v=2">
+            <img class="stone-grids--stone" data-stone-id="3" src="https://lucky-star-assets.pages.dev/web_assets/3.png">
             <img class="stone-grids--stone" data-stone-id="6" src="https://lucky-star-assets.pages.dev/web_assets/6.png">
         </div>
         <div class="solar-system">
@@ -63,14 +58,14 @@ document.addEventListener("DOMContentLoaded", () => {
                     <div class="orbit-stone-2 orbit-stone" data-stone-id="2">
                         <img class="img-stone img-stone-2" src="https://lucky-star-assets.pages.dev/web_assets/2.png">
                     </div>
-                    <div class="orbit-stone-3 orbit-stone" data-stone-id="3">
-                        <img class="img-stone img-stone-3" src="https://lucky-star-assets.pages.dev/web_assets/3.png">
-                    </div>
                     <div class="orbit-stone-4 orbit-stone" data-stone-id="4">
                         <img class="img-stone img-stone-4" src="https://lucky-star-assets.pages.dev/web_assets/4.png">
                     </div>
                     <div class="orbit-stone-5 orbit-stone" data-stone-id="5">
                         <img class="img-stone img-stone-5" src="https://lucky-star-assets.pages.dev/web_assets/5.png?v=2">
+                    </div>
+                    <div class="orbit-stone-3 orbit-stone" data-stone-id="3">
+                        <img class="img-stone img-stone-3" src="https://lucky-star-assets.pages.dev/web_assets/3.png">
                     </div>
                     <div class="orbit-stone-6 orbit-stone" data-stone-id="6">
                         <img class="img-stone img-stone-6" src="https://lucky-star-assets.pages.dev/web_assets/6.png">

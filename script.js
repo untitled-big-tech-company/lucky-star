@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
                    <video loop muted preload="auto" poster="https://lucky-star-assets.pages.dev/web_assets/mind.png">
                         <source src="https://lucky-star-assets.pages.dev/web_assets/videos/mind.mp4" type="video/mp4" />
                    </video> 
-                </div>s
+                </div>
             </div>
         </div>
         <div class="stone-grids">

@@ -146,6 +146,7 @@ div#wb-main>section {
 .nebula-show--stone video {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .nebula-show--stone.active {

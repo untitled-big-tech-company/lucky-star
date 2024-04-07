@@ -123,8 +123,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // Start observing the target node for configured mutations
         observer.observe(targetNode, config);
     }
+    const currentPage = new URL(window.location.href).pathname.replaceAll("/", " ").trim().replaceAll(" ", '--');
+    document.body.classList.add(currentPage);
 
-    setTimeout(() => {
-        document.getElementById("tBaMU1").classList.add("trigger");
-    }, 200);
 });

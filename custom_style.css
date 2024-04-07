@@ -4,7 +4,7 @@
     --nebula-border-width: 10px;
 }
 
-div#app::before {
+body:not(.pages--nebula) div#app::before {
     background-image: url(https://img.thesitebase.net/files/10510656/2024/03/24/0x2048@1711294602d732eb0ef0.png);
     background-position: 50%;
     background-size: 1090px;
@@ -19,12 +19,12 @@ div#app::before {
     content: "";
 }
 
-div#wb-main>section {
+body:not(.pages--nebula) div#wb-main>section {
     background: none !important;
     z-index: 1;
 }
 
-div#wb-main>section:not(:has(.menu):has(.show)) {
+body:not(.pages--nebula) div#wb-main>section:not(:has(.menu):has(.show)) {
     z-index: 700;
 }
 
@@ -331,15 +331,15 @@ div.orbit-grid {
 }
 
 
-.button-quantity input {
+body:not(.pages--nebula) .button-quantity input {
     background: none;
 }
 
-.tabs__heading {
+body:not(.pages--nebula) .tabs__heading {
     display: none;
 }
 
-.tabs__headings-wrapper {
+body:not(.pages--nebula) .tabs__headings-wrapper {
     --p3-font-size: 28px;
     --p3-line-height: 2;
     gap: 0 ! important;

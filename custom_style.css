@@ -415,6 +415,7 @@ div.luckystar--heading-container p.stars {
 
 div.luckystar--heading-container p.stars>span {
     animation: stars-animation 2s infinite ease-in-out;
+    display: inline-block;
 }
 
 div.luckystar--heading-container p.stars>span:nth-child(3) {

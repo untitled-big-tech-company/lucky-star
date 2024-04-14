@@ -396,3 +396,58 @@ button.block-qty-discount__add {
         background-position: 100% 50%;
     }
 }
+
+div.luckystar--slogan {
+    text-align: center;
+    letter-spacing: -.2px;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(145deg, rgba(var(--color-4), .85) 30%, rgba(var(--color-3), 1));
+    background-clip: text;
+    --h-font-weight: 800;
+    line-height: 1.08;
+}
+
+div.luckystar--heading-container p.stars {
+    color: #fff;
+    text-align: center;
+    letter-spacing: 8px;
+}
+
+div.luckystar--heading-container p.stars>span {
+    animation: stars-animation 2s infinite ease-in-out;
+}
+
+div.luckystar--heading-container p.stars>span:nth-child(3) {
+    font-size: 40px;
+    animation-delay: 0s;
+}
+
+div.luckystar--heading-container p.stars>span:nth-child(2),
+div.luckystar--heading-container p.stars>span:nth-child(4) {
+    font-size: 30px;
+    animation-delay: 0.2s;
+}
+
+div.luckystar--heading-container p.stars>span:nth-child(1),
+div.luckystar--heading-container p.stars>span:nth-child(5) {
+    font-size: 20px;
+    animation-delay: 0.4s;
+}
+
+@keyframes stars-animation {
+    0% {
+        transform: scale(1);
+    }
+
+    90% {
+        transform: scale(1);
+    }
+
+    95% {
+        transform: scale(1.3);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

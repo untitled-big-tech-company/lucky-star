@@ -98,7 +98,7 @@ window.sbsdk.ready(function () {
     let els = document.querySelectorAll(".scroll-to-view--watch");
     els = Array.from(els);
     els.forEach((el) => {
-        luckyStarAddObserver(el, options);
+        luckyStarAddObserver(el);
     });
     setupNebulaShow();
 });

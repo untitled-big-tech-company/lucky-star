@@ -1,18 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    const currentPage = new URL(window.location.href).pathname
-        .replaceAll("/", " ")
-        .trim()
-        .replaceAll(" ", "--");
-    document.body.classList.add(currentPage);
+
 });
 
 function setupNebulaShow() {
-    // Select the node that will be observed for mutations
     const targetNode = document.getElementById("tBaMU1");
-
-    // Options for the observer (which mutations to observe)
-    const config = { attributes: true, childList: true, subtree: true };
     const triggerStoneChange = function (stoneId) {
         document
             .querySelector(`.stone-grids--stone.active`)
@@ -103,4 +95,10 @@ window.sbsdk.ready(function () {
         luckyStarAddObserver(el, options);
     });
     setupNebulaShow();
+
+    const currentPage = new URL(window.location.href).pathname
+        .replaceAll("/", " ")
+        .trim()
+        .replaceAll(" ", "--");
+    document.body.classList.add(currentPage);
 });

@@ -1,6 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-
+    const currentPage = new URL(window.location.href).pathname
+        .replaceAll("/", " ")
+        .trim()
+        .replaceAll(" ", "--");
+    if (currentPage) {
+        document.body.classList.add(currentPage);
+    }
 });
 
 function setupNebulaShow() {
@@ -95,10 +101,4 @@ window.sbsdk.ready(function () {
         luckyStarAddObserver(el, options);
     });
     setupNebulaShow();
-
-    const currentPage = new URL(window.location.href).pathname
-        .replaceAll("/", " ")
-        .trim()
-        .replaceAll(" ", "--");
-    document.body.classList.add(currentPage);
 });

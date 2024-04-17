@@ -452,3 +452,34 @@ div.luckystar--heading-container p.stars>span:nth-child(5) {
         transform: scale(1);
     }
 }
+
+.lucky--heading {
+    position: relative;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.lucky--heading:before {
+    display: block;
+    content: "";
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 40%;
+    border-radius: 3px;
+    opacity: .3;
+    background-color: rgba(var(--lucky--background-color));
+}
+
+body.pages--nebula [component="button"]>div:before {
+    display: block;
+    content: "";
+    border: 2px dashed white;
+    inset: 5px;
+    position: absolute;
+    z-index: 3;
+    opacity: 0.7;
+    border-radius: 99999px;
+    pointer-events: none;
+}

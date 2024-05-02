@@ -19,12 +19,12 @@ body:not(.pages--nebula) div#app::before {
     content: "";
 }
 
-body:not(.pages--nebula) div#wb-main>section {
+body.is-homepage div#wb-main>section {
     background: none !important;
     z-index: 1;
 }
 
-body:not(.pages--nebula) div#wb-main>section:not(:has(.menu):has(.show)) {
+body.is-homepage div#wb-main>section:not(:has(.menu):has(.show)) {
     z-index: 700;
 }
 

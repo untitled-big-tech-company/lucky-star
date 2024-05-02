@@ -4,13 +4,22 @@ document.addEventListener("DOMContentLoaded", () => {
         .replaceAll("/", " ")
         .trim()
         .replaceAll(" ", "--");
+
     if (currentPage) {
         document.body.classList.add(currentPage);
+        document.body.classList.add(...currentPage.split("--"));
+    } else {
+        document.body.classList.add('is-homepage');
     }
+
+
 });
 
 function setupNebulaShow() {
     const targetNode = document.getElementById("tBaMU1");
+    if (!targetNode) {
+        return;
+    }
     const triggerStoneChange = function (stoneId) {
         document
             .querySelector(`.stone-grids--stone.active`)

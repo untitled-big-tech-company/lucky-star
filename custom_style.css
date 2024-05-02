@@ -4,7 +4,7 @@
     --nebula-border-width: 10px;
 }
 
-body:not(.pages--nebula) div#app::before {
+body.is-homepage div#app::before {
     background-image: url(https://img.thesitebase.net/files/10510656/2024/03/24/0x2048@1711294602d732eb0ef0.png);
     background-position: 50%;
     background-size: 1090px;
@@ -331,15 +331,15 @@ div.orbit-grid {
 }
 
 
-body:not(.pages--nebula) .button-quantity input {
+body.is-homepage .button-quantity input {
     background: none;
 }
 
-body:not(.pages--nebula) .tabs__heading {
+body.is-homepage .tabs__heading {
     display: none;
 }
 
-body:not(.pages--nebula) .tabs__headings-wrapper {
+body.is-homepage .tabs__headings-wrapper {
     --p3-font-size: 28px;
     --p3-line-height: 2;
     gap: 0 ! important;
@@ -498,6 +498,6 @@ body.pages--nebula [component="button"]>div:before {
 [id=product_page] .custom-code__content table.product-description td {
     width: auto !important;
     display: table-cell;
-      padding: 2px 4px;
+    padding: 2px 4px;
     border: 1px solid black;
 }

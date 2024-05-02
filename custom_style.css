@@ -483,3 +483,21 @@ body.pages--nebula [component="button"]>div:before {
     border-radius: 99999px;
     pointer-events: none;
 }
+
+[id=product_page] .custom-code__content table.product-description {
+    /* width: 100% !important; */
+    border: 1px sold black;
+}
+[id=product_page] .custom-code__content table.product-description th {
+    width: auto !important;
+    display: table-cell;
+    padding: 2px 4px;
+    background: lightgray;
+    border: 1px solid black;
+}
+[id=product_page] .custom-code__content table.product-description td {
+    width: auto !important;
+    display: table-cell;
+      padding: 2px 4px;
+    border: 1px solid black;
+}
